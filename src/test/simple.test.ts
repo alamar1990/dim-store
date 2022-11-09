@@ -6,21 +6,19 @@ describe("HelloWorld.vue", () => {
 
     it("should renders is page content is correct", () => {
         const message = "Happy People";
-        const testMessage = "Happy People";
         const wrapper = mount(HelloWorld, {
             props: { message },
         });
 
-        expect(wrapper.text()).toBe(testMessage);
+        expect(wrapper.text()).toBe('Happy People');
     });
 
     it("should render if props value is correct", () => {
         const message = "Happy People";
-        const testMessage = "Happy People";
         const wrapper = mount(HelloWorld, {
             props: { message },
         });
 
-        expect(wrapper.vm.message).toBe(testMessage);
+        expect(wrapper.vm.message).toBe('Happy People');
     });
 });
