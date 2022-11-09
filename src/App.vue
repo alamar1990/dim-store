@@ -6,8 +6,8 @@
     <router-link to="/">
       HOME
     </router-link>
-    <router-link to="/">
-      TEST
+    <router-link to="/counter">
+      COUNTER
     </router-link>
   </div>
   <router-view />
